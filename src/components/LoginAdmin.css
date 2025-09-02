@@ -1,3 +1,4 @@
+/* Default: Laptop/Desktop */
 .login-admin-container {
   position: relative;
   min-height: 100vh;
@@ -9,18 +10,18 @@
   overflow: hidden;
 }
 
-/* Logo Kecil & Teks Header */
+/* Logo Header */
 .logo-header {
   position: absolute;
   top: 35px;
-  right: 1120px;
+  left: 40px; /* lebih fleksibel daripada fixed ke kanan */
   display: flex;
   align-items: center;
   z-index: 2;
 }
 
 .logo-small {
-  width:  70px;
+  width: 70px;
   height: 70px;
   margin-right: 10px;
 }
@@ -30,67 +31,97 @@
   font-size: 18px;
   color: #1e4421;
 }
-.H-text {
-  font-size: 14px;
-  color: #1e4421;
-  font-weight: bold;
-}
+
+.H-text,
 .K-text {
   font-size: 14px;
   color: #1e4421;
   font-weight: bold;
 }
 
-
+/* Background logo */
 .backgroundlogin-logo {
   position: absolute;
   top: 50%;
   left: 52%;
   transform: translate(-50%, -50%);
-  opacity: 0.28; 
+  opacity: 0.28;
   z-index: 0;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .backgroundlogin-logo img {
-  width: 1000px; 
+  width: 1000px;
   max-width: 90%;
   height: auto;
   filter: brightness(1.1);
 }
 
+/* Box Login */
 .login-form-box {
   position: relative;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.01); 
+  background: rgba(255, 255, 255, 0.85);
   padding: 35px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   max-width: 400px;
   width: 100%;
 }
-@media (max-width: 768px) {
-  .logo-header {
-    top: 20px;
-    right: auto;
-    left: 20px;
-    align-items: flex-start;
+
+.warning-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #1e4421;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.warning-box {
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.warning-box h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.warning-box p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+/* 🔹 Mode Khusus Laptop/Desktop (≥1024px) */
+@media (min-width: 1024px) {
+  .login-admin-container {
+    padding: 60px 80px;
   }
 
-  .logo-small {
-    width: 50px;
-    height: 50px;
-    margin-right: 5;
-    margin-bottom: 5px;
+  .login-form-box {
+    max-width: 450px;
+    padding: 45px;
   }
 
   .header-text {
-    font-size: 14px;
-    text-align: left;
+    font-size: 22px;
   }
 
   .H-text,
   .K-text {
-    font-size: 12px;
-    text-align: left;
+    font-size: 16px;
+  }
+
+  .backgroundlogin-logo img {
+    width: 1200px;
   }
 }

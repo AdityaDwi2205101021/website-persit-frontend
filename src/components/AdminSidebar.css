@@ -2,21 +2,24 @@
   width: 250px;
   background: linear-gradient(to bottom, #60eea7, #2fc886, #1f7d59, #145c44);
   color: #fff;
-  z-index: 10;
+  z-index: 1000;
   padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
   position: fixed;
-  overflow: hidden;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
   font-family: 'Segoe UI', sans-serif;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
+/* Logo */
 .logo-container {
   margin-bottom: 1rem;
-  z-index: 1;
 }
 
 .sidebar-logo {
@@ -30,14 +33,13 @@
   margin-bottom: 2rem;
   font-weight: bold;
   font-size: 0.9rem;
-  z-index: 1;
 }
 
+/* Links */
 .sidebar-links {
   list-style: none;
   padding: 0;
   width: 100%;
-  z-index: 1;
 }
 
 .sidebar-links li {
@@ -58,8 +60,9 @@
   transform: translateX(5px);
 }
 
+/* Logout button */
 .btn-logout {
-  margin-top: 1rem;
+  margin-top: auto; /* biar turun ke bawah */
   background: rgba(255, 255, 255, 0.15);
   border: none;
   color: #fff;
@@ -73,4 +76,48 @@
 .btn-logout:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.05);
+}
+
+/* 🔹 Responsive */
+@media (max-width: 1024px) {
+  .admin-y-sidebar {
+    width: 200px;
+    padding: 1rem;
+  }
+  .sidebar-logo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-y-sidebar {
+    transform: translateX(-100%); /* default hidden */
+    width: 220px;
+  }
+
+  .admin-y-sidebar.active {
+    transform: translateX(0); /* muncul kalau ada class .active */
+  }
+}
+
+/* tombol toggle sidebar (muncul di HP) */
+.sidebar-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: #145c44;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1100;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block;
+  }
 }

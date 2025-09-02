@@ -3,8 +3,10 @@
   color: #145c44;
   min-height: 100vh;
   margin-top: -40px;
+  padding: 20px;
 }
-.pimpinan-container h2{
+
+.pimpinan-container h2 {
   font-size: 35px;
   margin-top: -1rem;
   margin-bottom: 2rem;
@@ -12,28 +14,33 @@
   text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
   text-align: center;
   font-weight: bold;
-  font-family: 'Times New Roman'; 
+  font-family: 'Times New Roman';
 }
 
-
+/* Grid Pimpinan */
 .pimpinan-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* max 5 per baris */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: center;
   gap: 20px;
+  width: 100%;
 }
 
-
+/* Foto pimpinan */
 .pimpinan-foto {
-  width: 300px;
-  height: 400px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: 3 / 4; /* biar proporsional */
   padding: 10px;
   object-fit: cover;
   margin-bottom: 10px;
   border: 3px solid #145c44;
-  border-radius: 0px;
+  border-radius: 6px;
   transition: transform 0.3s;
 }
+
+/* Modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -61,6 +68,8 @@
 
 .modal-img {
   width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -73,4 +82,37 @@
   border: none;
   font-size: 20px;
   cursor: pointer;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .pimpinan-container h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pimpinan-container h2 {
+    font-size: 24px;
+  }
+  .pimpinan-foto {
+    max-width: 100%;
+  }
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pimpinan-container h2 {
+    font-size: 20px;
+  }
+  .pimpinan-foto {
+    max-width: 100%;
+  }
+  .modal-content {
+    width: 95%;
+    padding: 12px;
+  }
 }

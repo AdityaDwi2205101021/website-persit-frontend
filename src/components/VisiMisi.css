@@ -11,10 +11,12 @@
   z-index: 2;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px; /* biar ada space di HP */
 }
 
 .visimisi-publik-content h2 {
   color: #0f4f47;
+  margin-top: -5rem;
   font-weight: bold;
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
   font-family: 'Times New Roman', Times, serif;
@@ -24,11 +26,11 @@
 }
 
 .VM-text {
-  text-align: justify;
   font-size: 30px;
-  text-align: center;
   font-family: 'Times New Roman', Times, serif;
   color: #444;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .visimisi-publik-box {
@@ -76,4 +78,63 @@
 
 .visimisi-btn:hover {
   background: #0f4f47;
+}
+
+/* 🔹 RESPONSIVE */
+@media (max-width: 1024px) {
+  .visimisi-publik-content h2 {
+    font-size: 36px;
+    margin-top: -3rem;
+  }
+  .VM-text {
+    font-size: 24px;
+  }
+  .visimisi-default h4 {
+    font-size: 28px;
+  }
+  .visimisi-default p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .visimisi-publik-content h2 {
+    font-size: 28px;
+    margin-top: -3rem;
+  }
+  .VM-text {
+    font-size: 20px;
+  }
+  .visimisi-default h4 {
+    font-size: 24px;
+  }
+  .visimisi-default p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .visimisi-content-wrapper {
+    padding: 0 10px;
+    margin-top: -3rem;
+  }
+  .visimisi-publik-content h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .VM-text {
+    font-size: 16px;
+  }
+  .visimisi-default h4 {
+    font-size: 20px;
+  }
+  .visimisi-default p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .visimisi-btn {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
 }

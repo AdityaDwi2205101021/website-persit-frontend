@@ -1,4 +1,3 @@
-
 .public-layout {
   display: flex;
   flex-direction: column;
@@ -15,7 +14,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem; /* Jarak antara logo dan judul */
-  padding: 10px 20px;
+  padding: 10px 10px;
   flex-wrap: wrap; /* Biar turun ke bawah kalau kecil */
 }
 
@@ -26,13 +25,13 @@
   font-size: 1.8rem;
   display: none;
   position: absolute;
-  right: 31px;
+  right: 15px;
   z-index: 999; /* pastikan di atas elemen lain */
 }
 
 .nav-links {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .nav-links a {
@@ -67,6 +66,7 @@
 .navbar-logo {
   height: 100px;
 }
+
 .public-layout {
   display: flex;
   flex-direction: column;
@@ -78,6 +78,7 @@
   padding: 2rem;
   color: #145c44;
 }
+
 .hamburger-btn {
   background: none;
   border: none;
@@ -142,6 +143,7 @@
   margin-top: -20px;
   margin-left: -20px;
 }
+
 .navbar-title-beranda {
   font-size: 0.8rem;
   font-weight: bold;
@@ -165,6 +167,7 @@
   text-align: center;
   padding: 1rem 0;
 }
+
 .public-footer {
   background-color: #145c44;
   color: white;
@@ -181,8 +184,11 @@
   flex-wrap: wrap;
 }
 
+/* 🔹 Media sosial di footer ditengah */
 .footer-socials {
   display: flex;
+  justify-content: center; /* selalu tengah */
+  width: 100%; /* full lebar */
   gap: 15px;
   align-items: center;
   font-size: 25px;
@@ -225,6 +231,7 @@
   font-size: 8px;
   margin-top: -10px;
 }
+
 .login-logo {
   margin-top: -15px;
   margin-left: 10px;
@@ -236,4 +243,3 @@
 .login-logo:hover {
   color: #145c44;   /* warna saat hover */
 }
-

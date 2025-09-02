@@ -5,7 +5,7 @@
   min-height: 100vh;
   margin-top: -40px;
   padding: 20px;
-  overflow-x: auto; /* biar bisa scroll horizontal kalau banyak */
+  overflow-x: hidden;
 }
 
 .pembina-publik-container h2 {
@@ -19,22 +19,25 @@
   font-family: 'Times New Roman';
 }
 
+/* 🔹 Grid pembina */
 .pembina-publik-list {
   display: grid;
-  margin-left: -40px;
-  grid-template-columns: repeat(4, 1fr); /* max 5 per baris */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   justify-items: center;
+  width: 100%;
 }
 
+/* 🔹 Card */
 .pembina-publik-card {
-  flex: 0 0 250px; /* ukuran fix biar jejer */
   background-color: #ffffff;
   color: black;
   border-radius: 5px;
   border: 2px solid #145c44;
   text-align: center;
   transition: transform 0.2s ease;
+  width: 100%;
+  max-width: 300px;
 }
 
 .pembina-publik-card:hover {
@@ -45,9 +48,11 @@
   padding: 15px;
 }
 
+/* 🔹 Foto */
 .pembina-publik-foto {
-  width: 300px;
-  height: 400px;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   margin-bottom: 10px;
   border: 3px solid #145c44;
@@ -55,9 +60,9 @@
   transition: transform 0.3s;
 }
 
+/* 🔹 Nama & periode */
 .pembina-publik-nama {
   font-size: 1.2rem;
-  align-items: center;
   font-weight: bold;
   color: #145c44;
   margin-bottom: 0.5rem;
@@ -65,12 +70,11 @@
 
 .pembina-publik-periode {
   font-size: 0.9rem;
-  align-items: center;
   color: #666;
   line-height: 1.4;
 }
 
-/* Modal tetap sama */
+/* 🔹 Modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -98,6 +102,8 @@
 
 .modal-img {
   width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
   border-radius: 0px;
   margin-bottom: 15px;
 }
@@ -110,4 +116,41 @@
   border: none;
   font-size: 20px;
   cursor: pointer;
+}
+
+/* 🔹 RESPONSIVE */
+@media (max-width: 1024px) {
+  .pembina-publik-container h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pembina-publik-container h2 {
+    font-size: 24px;
+  }
+  .pembina-publik-foto {
+    max-width: 220px;
+  }
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pembina-publik-container h2 {
+    font-size: 20px;
+  }
+  /* 🔹 HP kecil jadi 1 kolom */
+  .pembina-publik-list {
+    grid-template-columns: 1fr;
+  }
+  .pembina-publik-foto {
+    max-width: 100%;
+  }
+  .modal-content {
+    width: 95%;
+    padding: 12px;
+  }
 }

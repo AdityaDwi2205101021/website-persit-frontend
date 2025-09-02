@@ -5,6 +5,7 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* HERO SECTION */
 .hero-section {
   background-color: #d8f3dc;
   padding: 2rem;
@@ -30,36 +31,39 @@
   margin-bottom: 1.5rem;
   border-radius: 8px;
 }
+
+/* SLIDER */
 .hero-slider {
-  margin-top: -100px;
-  margin-bottom: 2rem;
-  margin-left: -30px;
-  width: 1525px;
-  height: 700px;
+  margin: 0 auto 2rem auto;
+  width: 100%;
+  max-width: 1525px;
+  height: auto;
+  border-radius: 12px;
   overflow: hidden;
   object-fit: cover;
-  border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .slider-image {
   width: 100%;
-  height: 700px;
+  height: auto;
   object-fit: cover;
   display: block;
 }
+
+/* RESPONSIVE SLIDER */
 @media (max-width: 768px) {
   .hero-slider {
-    height: 350px;
-    width: 525px;
+    height: auto;
   }
 
   .slider-image {
-    height: 350px;
+    height: auto;
+    max-height: 100%;
   }
 }
 
-
+/* BERITA */
 .berita-item {
   background-color: #b3fab32c; /* hijau muda lembut */
   padding: 20px;
@@ -106,29 +110,33 @@
   background-color: #1c6845;
 }
 
-/* Galeri grid */
+/* GALERI */
 .galeri-grid {
   display: grid;
-  margin-left: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(23.5%, 23.5%));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 12px;
+  margin: 20px auto;
+  max-width: 100%;
 }
+
 .galeri-item img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s;
 }
+
 .galeri-item img:hover {
   transform: scale(1.05);
 }
 
-/* Modal Preview */
+/* MODAL PREVIEW */
 .modal-overlay {
   position: fixed;
   top: 0;
-  left: 100;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
@@ -137,23 +145,26 @@
   justify-content: center;
   align-items: center;
 }
+
 .modal-content {
   position: relative;
   max-width: 90%;
   max-height: 90%;
   padding: 10px;
 }
+
 .modal-content img {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 90%;
+  max-height: 90%;
   border-radius: 10px;
   box-shadow: 0 0 20px #000;
   border: 4px solid white;
 }
+
 .modal-close-button {
   position: absolute;
-  top: 160px;
-  right: 500px;
+  top: 20px;
+  right: 20px;
   background: transparent;
   border: none;
   font-size: 30px;
@@ -166,12 +177,11 @@
 .modal-close-button:hover {
   color: #ff6b6b;
 }
+
+/* BERANDA */
 .beranda-container {
-  padding: 40px;
-  margin-top: -50px;
-  margin-left: -48px;
-  margin-right: -32px;
-  margin-bottom: -32px;
+  padding: 20px;
+  margin: 0;
   background-color: transparent;
   min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
@@ -209,35 +219,17 @@
 
 /* Konten utama dalam kotak */
 .beranda-content {
-  max-width: 1300px;
-  margin-left: 10px;
+  max-width: 100%;
+  margin: 0 auto;
   background-color: white;
   border-radius: 12px;
-  padding: 40px;
+  padding: 20px;
   box-shadow: 0 4px 10px rgba(2, 2, 1, 0.3);
   position: relative;
   z-index: 1;
 }
 
-/* Bagian hero section tetap */
-.hero-section {
-  background-color: #d8f3dc;
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: center;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.hero-section h1 {
-  font-size: 2.5rem;
-  color: #1b4332;
-}
-
-.hero-section p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-}
+/* Tombol berita */
 .berita-btn {
   display: block;
   width: 100%;
@@ -254,4 +246,21 @@
   font-family: 'Times New Roman', Times, serif;
   transition: background-color 0.2s ease;
   text-align: center;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+  .beranda-content {
+    padding: 15px;
+  }
+  .galeri-item img {
+    max-width: 100%;
+    height: auto;
+  }
 }

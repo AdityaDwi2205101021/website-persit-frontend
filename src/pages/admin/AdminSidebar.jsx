@@ -32,6 +32,9 @@ export default function AdminSidebar() {
         <li><Link to="/admin/pembina-persit">Pembina Persit</Link></li>
         <li><button onClick={handleLogout} className="btn-logout">Logout</button></li>
       </ul>
+<button class="sidebar-toggle" onclick="document.querySelector('.admin-y-sidebar').classList.toggle('active')">
+  ☰ Menu
+</button>
 
       <div className="leaf-bottom" />
     </div>

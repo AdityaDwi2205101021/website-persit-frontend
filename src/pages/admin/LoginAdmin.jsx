@@ -1,12 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../../services/api";
-import "../../components/LoginAdmin.css"; // tambahkan CSS custom
+import "../../components/LoginAdmin.css"; // CSS custom
 
 function LoginAdmin() {
   const [form, setForm] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
+  const [isMobile, setIsMobile] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const checkScreen = () => {
+      if (window.innerWidth < 1024) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+
+    return () => {
+      window.removeEventListener("resize", checkScreen);
+    };
+  }, []);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -24,15 +42,32 @@ function LoginAdmin() {
     }
   };
 
+  // 🔹 Kalau mobile, tampilkan peringatan
+  if (isMobile) {
+    return (
+      <div className="warning-mobile">
+        <div className="warning-box">
+          <h1>⚠️ PERINGATAN!</h1>
+          <p>
+            Halaman <b>ADMIN</b> hanya bisa diakses menggunakan <br/>{" "}
+            <b> PC / Laptop </b>.
+          </p>
+          <p>Silakan buka kembali di perangkat yang sesuai.</p>
+        </div>
+      </div>
+    );
+  }
+
+  // 🔹 Kalau desktop, tampilkan form login
   return (
     <div className="login-admin-container">
       <div className="logo-header">
         <img src="/LogoPersit.png" alt="Logo Kecil" className="logo-small" />
-      <div className="logo-text">
-        <div className="header-text">PERSIT KARTIKA CANDRA KIRANA</div>
-        <div className="H-text"> CABANG XVII DIM 0803 MADIUN</div>
-        <div className="K-text"> KOORCAB REM 081 PD V/BRAWIJAYA</div>
-      </div>  
+        <div className="logo-text">
+          <div className="header-text">PERSIT KARTIKA CANDRA KIRANA</div>
+          <div className="H-text"> CABANG XVII DIM 0803 MADIUN</div>
+          <div className="K-text"> KOORCAB REM 081 PD V/BRAWIJAYA</div>
+        </div>
       </div>
 
       <div className="backgroundlogin-logo">
