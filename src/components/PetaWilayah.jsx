@@ -34,7 +34,7 @@ export default function PetaPublik() {
 
   return (
     <MapContainer
-      center={[-7.629, 111.523]} // posisi default Madiun
+      center={[-7.629714, 111.523152]} // posisi default Madiun
       zoom={13}
       style={{ height: "500px", width: "100%" }}
     >

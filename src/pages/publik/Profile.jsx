@@ -8,15 +8,6 @@ export default function ProfilPublik() {
 
   return (
     <div className="profil-publik-container">
-      {/* Background teks miring */}
-      <div className="profil-publik-bg-text">
-        {Array(50).fill(
-          <div className="profil-publik-bg-line">
-            {Array(30).fill("PERSIT KODIM MADIUN ").join("")}
-          </div>
-        )}
-      </div>
-
       {/* Layout utama */}
       <div className="profil-publik-layout">
         {/* Kolom kiri: Profil */}

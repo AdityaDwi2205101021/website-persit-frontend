@@ -23,15 +23,6 @@ export default function SejarahPersit() {
 
   return (
     <div className="sejarah-page">
-      {/* Background teks miring di luar konten utama */}
-      <div className="sejarah-bg-text">
-        {Array(50).fill(
-          <div className="sejarah-bg-line">
-            {Array(30).fill("SEJARAH PERSIT KODIM MADIUN ").join("")}
-          </div>
-        )}
-      </div>
-
       {/* Konten utama */}
       <div className="sejarah-content-wrapper">
         <div className="sejarah-publik-content">
