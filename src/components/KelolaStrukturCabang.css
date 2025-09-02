@@ -1,0 +1,142 @@
+/* Struktur Logo Background */
+.background-struktur-cabang-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.background-struktur-cabang-logo img {
+  width: 900px;
+  max-width: 100%;
+  height: auto;
+  filter: brightness(1.1);
+}
+
+/* Container Utama */
+.kelola-struktur-cabang-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Konten Utama */
+.kelola-struktur-cabang-content {
+  flex: 1;
+  margin-left: 250px;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Form Tambah/Edit Struktur */
+.form-struktur-cabang {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.form-struktur-cabang input[type="text"],
+.form-struktur-cabang input[type="file"],
+.form-struktur-cabang input[type="date"] {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Tombol Submit */
+.btn-submit {
+  padding: 0.7rem;
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #225c42;
+}
+
+/* Preview Foto */
+.preview-container {
+  margin-top: 0.5rem;
+}
+
+.preview-container img {
+  max-width: 220px;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+/* Daftar Struktur Ranting */
+.daftar-struktur-ranting {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Kartu Ranting */
+.ranting-card {
+  flex: 1 1 250px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.ranting-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #eee;
+}
+
+/* Grup Tombol */
+.btn-group {
+  margin-top: 0.7rem;
+}
+
+.btn-edit,
+.btn-hapus {
+  padding: 0.5rem 1rem;
+  margin: 0 0.3rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-edit {
+  background-color: #0077b6;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #005f94;
+}
+
+.btn-hapus {
+  background-color: #d00000;
+  color: white;
+}
+
+.btn-hapus:hover {
+  background-color: #a00000;
+}
+.template-link-ranting-container {
+  margin-bottom: 1.5rem;
+  margin-left: 0px;
+  text-align: left; 
+}

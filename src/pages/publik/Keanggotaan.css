@@ -1,0 +1,76 @@
+.keanggotaan-container {
+  display: flex;
+}
+
+.keanggotaan-content {
+  flex: 1;
+  padding: 2rem;
+}
+.k-text {
+  font-size: 45px;
+  margin-top: -7rem;
+  margin-bottom: 2rem;
+  color: #145c44;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Times New Roman';
+}
+.keanggotaan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.btn-statistik {
+  background: linear-gradient(to bottom, #44a876, #249665, #1f7d59, #145c44);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-statistik:hover {
+  background-color: #0056b3;
+}
+
+.keanggotaan-body {
+  margin-top: -100px;
+  grid-template-columns: 1fr 1fr; /* Bagi 2 kolom */
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1100px;
+  margin: 15 auto;
+}
+
+.keanggotaan-body section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.keanggotaan-body section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.keanggotaan-body h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #145c44;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.keanggotaan-body p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+

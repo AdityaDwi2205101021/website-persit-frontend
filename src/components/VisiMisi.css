@@ -1,0 +1,79 @@
+.visimisi-page {
+  position: relative;
+}
+
+.visimisi-bg-line {
+  line-height: 18px;
+}
+
+.visimisi-content-wrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.visimisi-publik-content h2 {
+  color: #0f4f47;
+  font-weight: bold;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.VM-text {
+  text-align: justify;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: #444;
+}
+
+.visimisi-publik-box {
+  background: #f8fdfc;
+  border-left: 5px solid #2c7a7b;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.visimisi-default {
+  margin-top: 20px;
+}
+
+.visimisi-default h4 {
+  color: #136f63;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.visimisi-default p {
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.7;
+}
+
+.visimisi-publiks-sidebar {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.visimisi-btn {
+  background: #136f63;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.visimisi-btn:hover {
+  background: #0f4f47;
+}

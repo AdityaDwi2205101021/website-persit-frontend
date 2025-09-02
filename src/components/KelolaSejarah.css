@@ -1,0 +1,97 @@
+.kelola-sejarah-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.kelola-sejarah-content {
+  flex: 1;
+  padding: 2rem;
+  position: relative;
+}
+
+.background-sejarah-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.background-sejarah-logo img {
+  width: 1000px;
+  max-width: 100%;
+  height: auto;
+  filter: brightness(1.1);
+}
+
+.kelola-sejarah-form {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.kelola-sejarah-form .form-group {
+  margin-bottom: 1.2rem;
+}
+
+.kelola-sejarah-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.kelola-sejarah-form input[type="text"],
+.kelola-sejarah-form textarea,
+.kelola-sejarah-form input[type="file"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn-submit {
+  padding: 0.6rem 1.2rem;
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #1e4d36;
+}
+
+.daftar-sejarah {
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.sejarah-item {
+  background-color: #ffffffd5;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border-left: 5px solid #2d6a4f;
+}
+
+.sejarah-item img {
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+.konten-admin-sejarah {
+  margin-left: -1000px;
+  padding: 1rem;
+  flex: 1;
+}

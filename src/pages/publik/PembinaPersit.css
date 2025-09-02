@@ -1,0 +1,113 @@
+/* 📌 PembinaPersit.css */
+.pembina-publik-container {
+  background-color: #ffffff;
+  color: #145c44;
+  min-height: 100vh;
+  margin-top: -40px;
+  padding: 20px;
+  overflow-x: auto; /* biar bisa scroll horizontal kalau banyak */
+}
+
+.pembina-publik-container h2 {
+  font-size: 35px;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  color: #145c44;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Times New Roman';
+}
+
+.pembina-publik-list {
+  display: grid;
+  margin-left: -40px;
+  grid-template-columns: repeat(4, 1fr); /* max 5 per baris */
+  gap: 20px;
+  justify-items: center;
+}
+
+.pembina-publik-card {
+  flex: 0 0 250px; /* ukuran fix biar jejer */
+  background-color: #ffffff;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid #145c44;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.pembina-publik-card:hover {
+  transform: translateY(-5px);
+}
+
+.pembina-publik-card-body {
+  padding: 15px;
+}
+
+.pembina-publik-foto {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #145c44;
+  border-radius: 0px;
+  transition: transform 0.3s;
+}
+
+.pembina-publik-nama {
+  font-size: 1.2rem;
+  align-items: center;
+  font-weight: bold;
+  color: #145c44;
+  margin-bottom: 0.5rem;
+}
+
+.pembina-publik-periode {
+  font-size: 0.9rem;
+  align-items: center;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Modal tetap sama */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  animation: fadeInUp 0.3s ease;
+}
+
+.modal-img {
+  width: 100%;
+  border-radius: 0px;
+  margin-bottom: 15px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}

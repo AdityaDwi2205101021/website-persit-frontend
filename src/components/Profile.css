@@ -1,0 +1,267 @@
+.profil-publik-container {
+  padding: 40px;
+  margin-top: -50px;
+  margin-left: -48px;
+  margin-right: -32px;
+  margin-bottom: -32px;
+  background-color: transparent;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background teks miring */
+.profil-publik-bg-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-30deg);
+  transform-origin: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.2;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #24c73f;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 0;
+}
+
+.profil-publik-bg-line {
+  width: 300vw;
+  text-align: center;
+}
+
+.profil-publik-content {
+  max-width: 1300px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(2, 2, 1, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.profil-publik-content h2 {
+  font-size: 35px;
+  text-align: center;
+  color: #145c44;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-family: 'Times New Roman';
+  margin-bottom: 30px;
+}
+.profil-publik-box {
+  text-align: justify;
+}
+
+.profil-publik-box h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.profil-publik-box p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.profil-publik-img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+.profil-publik-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+.profil-publik-bg-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-30deg);
+  transform-origin: center;
+  opacity: 0.15;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #24c73f;
+  pointer-events: none;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+}
+
+.profil-publik-bg-line {
+  width: 300vw;
+  text-align: center;
+}
+
+.profil-publik-layout {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.profil-publik-content {
+  flex: 2;
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profil-publiks-sidebar {
+  flex: 0 0 200px;
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.profil-publiks-sidebar h4 {
+  margin-bottom: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-weight: bold;
+  color: #145c44;
+}
+
+.profils-btn {
+  display: block;
+  width: 100%;
+  background: linear-gradient(to bottom, #70be97, #249665, #1f7d59, #145c44);
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  transition: background-color 0.2s ease;
+  text-align: center;
+}
+
+.profils-btn i {
+  margin-right: 8px;
+}
+
+.profils-btn:hover {
+  background-color: #197b2982;
+}
+
+.profil-publik-box {
+  text-align: justify;
+}
+
+.profil-publik-box h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.profil-publik-box p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.profil-publik-img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+.profil-publik-highlight {
+  background: #f4f9f6;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profil-publik-highlight .highlight-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #145c44;
+  margin-bottom: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.profil-publik-highlight h5 {
+  font-size: 25px;
+  text-align: center;
+  color: #333;
+  margin-top: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.profil-publik-highlight p {
+ font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+.profil-publik-highlight ul {
+  font-size: 20px;
+  padding-left: 20px;
+  list-style-type: disc;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.profil-section {
+  position: relative;
+}
+
+.profil-title {
+  font-size: 28px;
+  color: #2c7a7b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  animation: fadeDown 1s ease-in-out;
+}
+
+.profil-text-box {
+  background: #f8fdfc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: zoomIn 1s ease;
+}
+
+.profil-text {
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.profil-text .highlight {
+  color: #136f63;
+  font-weight: bold;
+}
+

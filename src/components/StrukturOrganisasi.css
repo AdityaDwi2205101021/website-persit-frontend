@@ -1,0 +1,56 @@
+/* StrukturOrganisasi.css */
+
+/* Container utama */
+.struktur-organisasi-publik {
+  text-align: center; /* Center konten */
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+/* Foto struktur organisasi */
+.foto-struktur-publik {
+  width: 100%;              /* Lebar menyesuaikan kontainer */
+  max-width: 1500px;        /* Maksimal 1200px */
+  height: auto;             /* Tinggi mengikuti proporsi asli */
+  display: block;           /* Agar bisa di-center */
+  margin-top: -50px;       /* Jarak atas/bawah dan center horizontal */
+  border-radius: 8px;       /* Sudut membulat */
+  border: 1px solid #ccc;   /* Border tipis */
+  object-fit: cover;        /* Memastikan gambar memenuhi area kontainer */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow halus */
+}
+
+/* Tanggal terakhir diubah */
+.tanggal-terakhir-publik {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+/* Pesan jika belum ada foto */
+.struktur-organisasi-publik p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Responsive: untuk layar lebih kecil */
+@media screen and (max-width: 768px) {
+  .struktur-organisasi-publik {
+    padding: 1rem;
+  }
+
+  .struktur-organisasi-publik h2 {
+    font-size: 1.5rem;
+  }
+
+  .foto-struktur-publik {
+    max-width: 100%; /* Sesuaikan sepenuhnya dengan layar */
+    height: auto;
+  }
+
+  .tanggal-terakhir-publik {
+    font-size: 0.9rem;
+  }
+}

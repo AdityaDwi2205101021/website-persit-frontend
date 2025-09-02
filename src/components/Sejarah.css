@@ -1,0 +1,194 @@
+/* === STYLE ASLI === */
+.sejarah-page {
+  position: relative;
+  padding: 3%;
+  margin-top: -50px;
+  margin-left: -48px;
+  margin-right: -32px;
+  margin-bottom: -32px;
+  min-height: 50vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.sejarah-publik-content h2 {
+  font-size: 45px;
+  text-align: center;
+  color: #145c44;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-family: 'Times New Roman';
+  margin-bottom: 30px;
+}
+.S-text {
+  font-size: 18px;                /* sedikit lebih kecil agar pas untuk teks panjang */
+  line-height: 1.8;               /* jarak antar baris nyaman */
+  text-align: justify;            /* teks rata kiri-kanan */
+  color: #333333;                 /* warna teks lebih lembut */
+  font-family: 'Georgia', serif;  /* font klasik lebih enak dibaca */
+  letter-spacing: 0.5px;          /* jarak antar huruf */
+  margin-bottom: 30px;
+  padding: 30px 20px;             /* beri ruang dalam */
+  background-color: #f9f9f9;      /* latar belakang lembut */
+  border-left: 4px solid #2c3e50; /* garis dekorasi di sisi kiri */
+  border-radius: 8px;             /* sudut membulat */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* bayangan halus */
+}
+
+/* Efek huruf pertama lebih besar (drop cap) */
+.S-text::first-letter {
+  font-size: 40px;
+  font-weight: bold;
+  color: #2c3e50;
+  float: left;
+  margin-right: 8px;
+  line-height: 1;
+}
+
+.sejarah-bg-text {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 300vh;
+  height: 100%;
+  transform: rotate(-30deg);
+  transform-origin: center;
+  font-weight: bold;
+  font-size: 2rem;
+  opacity: 0.15;
+  color: #24c73f;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.5rem;
+}
+
+.sejarah-bg-line {
+  text-align: center;
+  width: 300vw;
+}
+
+.sejarah-content-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 30px;
+  max-width: 1500px;
+  margin-left: 10px;
+}
+
+.sejarah-publik-content {
+  flex: 2;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sejarah-publik-sidebar {
+  flex: 0 0 300px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.sejarah-publik-sidebar h4 {
+  margin-bottom: 3px;
+  color: #197b2a;
+  font-weight: bold;
+}
+
+.sejarah-btn {
+  display: block;
+  width: 7%;
+  background: linear-gradient(to bottom, #44a876, #249665, #1f7d59, #145c44);
+  color: white;
+  border: none;
+  margin-left: 1280px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  text-align: center;
+}
+
+.sejarah-btn:hover {
+  background-color: #197b2982;
+}
+
+.sejarah-publik-box {
+  text-align: justify;
+}
+
+.sejarah-publik-box h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.sejarah-publik-box p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.sejarah-publik-img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.sejarah-publik-box small {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 992px) {
+  .sejarah-content-wrapper {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .sejarah-publik-sidebar {
+    flex: unset;
+    width: 100%;
+  }
+
+  .sejarah-btn {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sejarah-publik-content h2 {
+    font-size: 28px;
+  }
+
+  .sejarah-btn {
+    width: 50%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .sejarah-bg-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

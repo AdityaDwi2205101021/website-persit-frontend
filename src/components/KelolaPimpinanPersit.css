@@ -1,0 +1,155 @@
+.kelola-pimpinan-container {
+  display: flex;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  min-height: 100vh;
+  background-color: #f7f9f8;
+  overflow: hidden;
+}
+
+.konten-admin-pimpinan {
+  margin-left: 260px;
+}
+
+.kelola-pimpinan-content {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.background-pimpinan-logo {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  opacity: 0.18;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.background-pimpinan-logo img {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  filter: brightness(1.1);
+}
+
+.form-pimpinan {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  z-index: 2;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.form-pimpinan input[type="text"],
+.form-pimpinan input[type="file"],
+.form-pimpinan input[type="date"] {
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #cfcfcf;
+  width: 100%;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-pimpinan input:focus {
+  border-color: #2d6a4f;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.2);
+}
+
+.btn-submit-pimpinan {
+  padding: 0.7rem;
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-submit-pimpinan:hover {
+  background-color: #1b4332;
+  transform: scale(1.02);
+}
+
+.preview-img {
+  max-width: 200px;
+  max-height: 300px;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* LIST PEMBINA - JEJER KE BAWAH */
+.pimpinan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pimpinan-item {
+  width: auto;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.pimpinan-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.pimpinan-item img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover; /* supaya rapi */
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.pimpinan-item h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pimpinan-item p {
+  margin: 5px 0 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.pimpinan-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-edit {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+

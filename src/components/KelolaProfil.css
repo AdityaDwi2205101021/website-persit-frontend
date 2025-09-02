@@ -1,0 +1,104 @@
+.kelola-profil-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.konten-admin-profil {
+  flex: 1;
+}
+
+.kelola-profil-content {
+  flex: 4;
+  padding: 40px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.background-profil-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.background-profil-logo img {
+  width: 120px;
+  height: auto;
+}
+
+.kelola-profil-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.kelola-profil-form .form-group {
+  margin-bottom: 20px;
+}
+
+.kelola-profil-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.kelola-profil-form input[type="text"],
+.kelola-profil-form textarea,
+.kelola-profil-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.kelola-profil-form textarea {
+  resize: vertical;
+}
+
+.btn-submit-p {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #218838;
+}
+
+.daftar-profil {
+  margin-top: 40px;
+}
+
+.daftar-profil h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.profil-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+}
+
+.profil-item h4 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.profil-item img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}

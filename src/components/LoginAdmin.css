@@ -1,0 +1,96 @@
+.login-admin-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f0f4f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+/* Logo Kecil & Teks Header */
+.logo-header {
+  position: absolute;
+  top: 35px;
+  right: 1120px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo-small {
+  width:  70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.header-text {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1e4421;
+}
+.H-text {
+  font-size: 14px;
+  color: #1e4421;
+  font-weight: bold;
+}
+.K-text {
+  font-size: 14px;
+  color: #1e4421;
+  font-weight: bold;
+}
+
+
+.backgroundlogin-logo {
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  opacity: 0.28; 
+  z-index: 0;
+  pointer-events: none; 
+}
+
+.backgroundlogin-logo img {
+  width: 1000px; 
+  max-width: 90%;
+  height: auto;
+  filter: brightness(1.1);
+}
+
+.login-form-box {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.01); 
+  padding: 35px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0);
+  max-width: 400px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .logo-header {
+    top: 20px;
+    right: auto;
+    left: 20px;
+    align-items: flex-start;
+  }
+
+  .logo-small {
+    width: 50px;
+    height: 50px;
+    margin-right: 5;
+    margin-bottom: 5px;
+  }
+
+  .header-text {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .H-text,
+  .K-text {
+    font-size: 12px;
+    text-align: left;
+  }
+}

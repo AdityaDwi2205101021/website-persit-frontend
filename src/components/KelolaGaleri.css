@@ -1,0 +1,77 @@
+.kelola-galeri-container {
+  display: flex;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  min-height: 100vh;
+  background-color: #f7f9f8;
+  overflow: hidden;
+}
+
+.kelola-galeri-content {
+  flex: 1;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.background-galeri-logo {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  opacity: 0.18;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.background-galeri-logo img {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  filter: brightness(1.1);
+}
+
+.form-galeri {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  z-index: 2;
+}
+
+.form-galeri input[type="text"],
+.form-galeri input[type="file"],
+.form-galeri input[type="date"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.btn-submit-galeri {
+  padding: 0.6rem;
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.preview-img {
+  max-width: 200px;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+}
+
+.galeri-item {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.konten-admin-galeri {
+  margin-left: 0px;
+  
+}
